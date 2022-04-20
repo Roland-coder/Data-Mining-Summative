@@ -40,7 +40,7 @@ if st.button('Predict News article  text'):
 		st.write("Please enter a valid news article")
 	else:
 		pred = model.predict([text_pred])
-		pred = np.argmax(pred, axis = 0)
+# 		pred = np.argmax(pred, axis = 0)
 		if pred == 0:
 			st.write("News Article is Reliable")
 		else:
