@@ -19,7 +19,7 @@ import re
 import string
 from PIL import Image
 
-model = pickle.load(open('fake_news_model.pkl', 'rb'))
+model = pickle.load(open('cos://us-geo/machinelearningproject-donotdelete-pr-pm14svdjnc2rao/fake_news_model', 'rb'))
 
 nltk.download('stopwords')
 
