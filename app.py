@@ -42,7 +42,7 @@ def cleaning_text(text):
     # remove mentions
     text = re.sub(r'@\w+',' ',text)         
     # removing hastags
-    text = re.sub(r'#\w+', ' ', text)       
+    text = re.sub(r'#\w+', ' ', str(text))       
     # removing html tags
     text = re.sub('r<.*?>',' ', text)       
     
