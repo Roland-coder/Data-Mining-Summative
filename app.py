@@ -97,7 +97,7 @@ if st.button('Predict News article  text'):
 	if len(new_text) <= 2:
 		st.write("Please enter a valid news article")
 	else:
-		pred = model.predict(X_val)[len(X_val-1)]
+		pred = model.predict(X_val[-1])
 		pred = np.argmax(pred, axis = 0)
 		if pred == 0:
 			st.write("News Article is fake")
