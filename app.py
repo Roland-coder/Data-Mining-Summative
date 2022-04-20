@@ -55,7 +55,7 @@ def cleaning_text(text):
     
     return text
 
-df['text'] = df['text'].apply(lambda x: cleaning_text(x)) 
+df['text'] = df['text'].replace(np.nan, '').apply(lambda x: cleaning_text(x)) 
 new_text = cleaning_text(text_pred)
 
   
