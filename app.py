@@ -19,7 +19,7 @@ import re
 import string
 from PIL import Image
 
-model = pickle.load(open('https://cloud-lab-20.s3.amazonaws.com/fake_news_model', 'rb'))
+model = pickle.load(open('model.pickle', 'rb'))
 
 nltk.download('stopwords')
 
