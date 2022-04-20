@@ -28,7 +28,7 @@ st.header("Fake News Prediction")
 st.write("This web app predicts the fake news based on the content of the news article")
 st.write("Please be patient, app may take a while to do predictions due to some internal processes that need to be met")
 
-image = Image.open("emotion.png")
+image = Image.open("fake-news-image.png")
 st.image(image, use_column_width=True)
 text_pred = st.text_input("Please enter news article in the text below")
 df = pd.read_csv("https://jeanbucket001.s3.us-west-2.amazonaws.com/train.csv.zip" )
