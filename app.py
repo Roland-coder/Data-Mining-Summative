@@ -100,9 +100,9 @@ if st.button('Predict News article  text'):
 		pred = model.predict(X_val[-1])
 		pred = np.argmax(pred, axis = 0)
 		if pred == 0:
-			st.write("News Article is fake")
+			st.write("News Article is Reliable")
 		else:
-			st.write("News article is not fake")
+			st.write("News article is not Unreliable")
   	
 # 	st.write("The overall predicted score for the above player is", clubs.index(club))
 else:
