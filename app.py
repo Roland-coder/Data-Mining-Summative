@@ -36,7 +36,7 @@ df = pd.read_csv("https://jeanbucket001.s3.us-west-2.amazonaws.com/train.csv.zip
 
 
 if st.button('Predict News article  text'):
-	if len(new_text) <= 2:
+	if len(text_pred) <= 2:
 		st.write("Please enter a valid news article")
 	else:
 		pred = model.predict([text_pred])
