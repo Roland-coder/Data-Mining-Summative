@@ -1,0 +1,9 @@
+streamlit
+numpy
+opencv-python-headless
+Pillow
+pandas
+smart_open
+tensorflow 
+nltk
+sklearn
