@@ -92,7 +92,6 @@ def tokenizer(x_train, y_train, newv, max_len_word):
 
 X_train, X_val, y_train, y_val, word_dict = tokenizer(df.text, df.label, new_text, 300)
 
-label_back = encoder.classes_
 
 if st.button('Predict News article  text'):
 	if len(new_text) <= 2:
